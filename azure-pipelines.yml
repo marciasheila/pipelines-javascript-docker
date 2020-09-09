@@ -11,9 +11,9 @@ resources:
 variables:
 
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '4b1d4c90-460b-4301-8005-82332ba4ab67'
+  dockerRegistryServiceConnection: 'docker'
   imageRepository: 'marciasheilapipelinesjavascriptdocker'
-  containerRegistry: 'mspgcontainerregistry.azurecr.io'
+  containerRegistry: 'mspgdelete.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'mspgcontainerregistry7d0a-auth'
